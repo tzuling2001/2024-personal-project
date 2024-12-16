@@ -1,0 +1,120 @@
+/* homepage內 */
+
+/* banner */
+.banner{
+    max-width: 780px;
+    height: 200px;
+    width: 100%;
+    background-color: black;
+    margin-top: 100px;
+}
+/* paystep_group */
+.paystep_group{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.paystep_group .paystep{
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.paystep .img{
+    width: 80px;
+    height: 80px;
+    background-color: #000;
+}
+
+
+/* maincontent */
+.maincontent{
+    max-width: 980px;
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction:column ;
+    /* gap: 100px; */
+    align-items: center;
+}
+/* .purchase_table */
+    .purchase_table{
+        border-collapse: separate;
+        border-spacing : 30px;
+        box-sizing: border-box;
+        font-size: 1rem;
+        text-align: start;
+        width: 100%;
+    }
+    .purchase_table tr td{
+        color: #000;
+        font-size: 1rem;
+        font-family: "Noto Sans JP", sans-serif;
+        border-bottom:#c7c7c7 2px solid;
+        padding: 10px;
+    }
+    /* title */
+    .purchase_table tr:nth-child(1) td{
+        color: #c7c7c7;
+    }
+    /* purchase_box */
+    .purchase_box .items {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+    .purchase_box .img{
+        width: 140px;
+        height: 140px;
+        background-color: #b1b0b0;
+        position: relative;
+    }
+    .purchase_box img{
+        width: 100%;
+    }
+    .purchase_box .img:hover::before{
+        position: absolute;
+        content: '取消';
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 140px;
+        height: 140px;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* 文字樣式 */
+        color: #EE868E;
+        font-family: "Kaisei Tokumin", serif;
+        font-weight: 800;
+        font-size: 24px;
+    } 
+    
+    .purchase_box .quantity,.total{
+        text-align: end;
+    }
+    .purchase_box input{
+        max-width: 80px;
+        width: 100%;
+        font-size: 1rem;
+        text-align: center;
+        font-family: "Noto Sans JP", sans-serif;
+        border:none; 
+    }
+    .purchase_box input:hover{
+        border: #c7c7c7 2px solid; 
+        border-radius: 20px;
+    }
+    /* fieldset  */
+    form{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        padding: 0px 30px 0px 30px;
+        border-bottom:#c7c7c7 2px solid;
+    }
+    fieldset{
+        border: none;
+    }
+
+

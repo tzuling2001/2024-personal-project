@@ -1,0 +1,422 @@
+/* 文字 */
+    * {
+    box-sizing: border-box;
+    }
+    body,h3,h4,p,ul,li{
+        margin: 0;
+        padding: 0;
+    }
+    h2{
+        font-size: 32px;
+        font-family: "Kaisei Tokumin", serif;
+        font-weight: 800;
+        font-style: normal;
+    }
+    h3{
+        font-size: 24px;
+        font-family: "Noto Sans JP", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+    }
+    h4{
+        font-size: 18px;
+        font-family: "Noto Sans JP", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+    }
+    p{
+        font-size: 16px;
+        font-family: "Noto Sans JP", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+    a{
+        font-family: "Noto Sans JP", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+/* 結構 */
+    .warrper{
+        width: 100%;
+    }
+    .homepage{
+        width: calc(100% - 120px);
+        position: relative;
+        left: 0;
+        display: flex;
+        flex-direction:column ;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    .footer{
+        width: 100%;
+        height: 450px;
+        /* 樣式 */
+        background-color: #675D88;
+        color: #fff;
+    }
+/* nav_web （ W : 120px , flexd ) */
+    ul,li{
+        list-style: none;
+        margin-top: 0px;
+        padding: 0px;
+    }
+    a{
+        text-decoration:none;
+    }
+    .nav_mobile{
+        display: none;
+    }
+    /* logo */
+    .logo{
+        z-index: 100;
+        position: fixed;
+        right: 40px;
+        top: 60px;
+        width: 160px;
+        /* height: 100px; */
+        /* background-color: #EE868E; */
+    }
+    .nav_web>.logo>img{
+        width: 100%;
+    }
+    /* shopping_car*/
+    .shoppingcar{
+        z-index: 90;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .shoppingcar>.bag{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #EE868E;
+    }
+    .shoppingcar>.car{
+        width: 80px;
+        height: 60px;
+        background-color: #EE868E;
+    }
+    /* hamburger(side_bar)*/
+    .hamburger{
+        /* 定位 */
+        z-index: 80;
+        position: fixed;
+        right: 0;
+        width: 120px;
+        height: 100vh;
+        border-left: #2b2b2b 1px solid;
+        /* 內部元件 */
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        justify-content: center;
+        /* 動畫 */
+        transition: background-color 0.3s ease;
+    }
+    .hamburger:hover{
+        background-color: rgb(237, 237, 237,50%);
+    }
+    .hamburger span{
+        width: 50px;
+        height: 2px;
+        background-color: #2b2b2b;
+        margin: 10px;
+        /* 動態 */
+        transform-origin: left center;
+        transition: all .0.5s ease;
+    }
+    /* menu */
+    .menu{
+        z-index: 70; 
+        position: fixed;
+        right: -3000px;
+        /* 樣式 */
+        width: calc(100% - 120px);
+        height: 100%;
+        background-color: rgb(0, 0, 0,90%);
+        color: #fff;
+        transition: all .3s ease ;
+        /* 內部排列 */
+        padding-left: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        justify-content: center;
+    }
+    .menu .menu-title{
+        font-family: "Kaisei Tokumin", serif;
+        font-weight: 800;
+        font-size: 80px;
+        color: #fff;
+        -webkit-text-stroke: 2px #EE868E;
+    }
+    .menu .content{
+        width: 700px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-left: 10px;
+    }
+    .content>ul>li{
+        display: flex;
+    }
+    .content>ul>a{
+        color: #EE868E;
+        font-size: 32px;
+        font-family: "Kaisei Tokumin", serif;
+        font-weight: 800;
+        transition: all .1s ease;
+    }
+    .content>ul>a:hover{
+        font-size: 40px;
+    }
+    .content>ul>li>a{
+        color: #fff;
+        font-size: 16px;
+        margin-bottom: 40px;
+        padding: 5px;
+    }
+
+
+    /* 動態變化 */
+    .hamburger.active{
+        background-color: rgb(0, 0, 0,90%);
+        border-left: #EE868E 1px solid;
+    }
+    .hamburger.active span:nth-child(1){
+        transform: rotate(30deg);
+        background-color: #EE868E;
+    }
+    .hamburger.active span:nth-child(2){
+        transform: rotate(-30deg);
+        background-color: #EE868E;
+    }
+    .menu.active {
+        right: 120px;
+    }
+
+/* footer 內部 */
+    .footer-box{
+        width: calc(100% - 120px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        position: relative;
+        bottom: -100px;
+    }
+    /* footercontent */
+    .footercontent{
+        max-width: 950px;
+        width: 100%;
+        margin: 0px 20px 0px 20px;
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 40px;
+        border-top: 1px solid #fff ;
+    }
+    .footercontent-left{
+        max-width: 400px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+    }
+    .footercontent-right {
+        max-width: 400px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+    }
+    /* .footercontent-left */
+    .footer-logo{
+        width: 153px;
+        height: 60px;
+        background-color: #EE868E;
+    }
+    .footer-companyinfo{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-companyinfo .info{
+        width: 244px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+    }
+    /* .footercontent-right */
+    .footerbox-link{
+        display: flex;
+        gap: 30px;
+    }
+    .footerbox-link-items{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .footerbox-link-items a{
+        font-size: 14px;
+        color: #fff;
+    }
+    .footer-backToTop{
+        max-width: 60px;
+        width: 100%;
+    }
+    .footer-backToTop img{
+        width: 100%;
+        height: auto;
+    }
+    /* footerend */
+    .footerend{
+        max-width: 950px;
+        width: 100%;
+        border-top: 1px solid #fff ;
+        font-size: 14px;
+        padding-top: 40px;
+        text-align: center;
+    }
+
+/* 響應式 */
+@media screen and (max-width: 980px)  {
+    /* 結構 */
+    .homepage{
+        width: 100%;
+        display: flex;
+        flex-direction:column ;
+        align-items: center;
+    }
+    .footer{
+        height: 600px;
+    }
+    /* nav_mobile_bar （ W : 120px , flexd ) */
+        .nav_mobile_bar{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .nav_mobile{
+            z-index: 90;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            position: fixed;
+            bottom: 40px;
+            /* right: 184px; */
+            /* 樣式 */
+            width: 400px;
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(5px);
+            border-radius: 50px;
+            padding: 10px;
+        }
+        .nav_mobile>.link{
+            font-size: 18px;
+            font-family: "Noto Sans JP", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            color: #2b2b2b;
+            /* 動畫 */
+            transition: all 0.3s ease;
+        }
+        .nav_mobile>.link:hover{
+            font-size: 22px;
+            color: #EE868E;
+        }
+        /* none */
+        .shoppingcar,.hamburger{
+            display: none;
+        }
+        /* nav_mobile_hamburger */
+        .nav_mobile_hamburger{
+            /* 側邊直線 */
+            border-left:#EE868E 3px solid ;
+            padding: 10px 0px 10px 20px;
+
+            /* 內部元件 */
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;    
+            justify-content: center;
+        }
+        .nav_mobile_hamburger span{
+            width: 40px;
+            height: 2px;
+            background-color: #2b2b2b;
+            /* 動態 */
+            transform-origin: left center;
+            transition: all .0.5s ease;
+        }
+        /* menu */
+        .menu{
+            display: none;
+            width: 100%;
+            padding-left: 50px;
+        }
+        .menu .menu-title{
+            font-size: 60px;
+            -webkit-text-stroke: 1px #EE868E;
+        }
+        .menu .content{
+            width: 700px;
+            display: flex;
+            flex-direction: column;
+            /* padding-left: 10px; */
+        }
+        .menu .content>ul>a{
+            color: #EE868E;
+            font-size: 24px;
+        }
+        .menu .content>ul>li>a{
+            color: #fff;
+            font-size: 14px;
+            /* padding-bottom: -100px; */
+        }
+
+        /* 動態變化 */
+        .nav_mobile_hamburger.active span:nth-child(1){
+            transform: rotate(20deg);
+            background-color: #EE868E;
+        }
+        .nav_mobile_hamburger.active span:nth-child(2){
+            transform: rotate(-20deg);
+            background-color: #EE868E;
+        }
+        .menu.active {
+            right: 0px;
+            display: flex;
+        }
+    /* footer 內部 */
+        .footer-box{
+            width: 100%;
+        }
+        /* footercontent */
+        .footercontent{
+            max-width: 600px;
+            width: 100%;
+        }
+        /* footerend */
+        .footerend{
+            max-width: 600px;
+            width: 100%;
+        }
+       
+}

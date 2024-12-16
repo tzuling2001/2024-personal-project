@@ -1,0 +1,209 @@
+/* all-page內 */
+
+/* topheader */
+.topheader{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+.header_left{
+    flex: 1;
+    min-width: 480px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header_right{
+    max-width: 550px;
+    width: 100%;
+    padding: 20px 10px 0px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* header_left */
+    .header_left .product_img img{
+        width: 100%;
+    }
+    .product_img_group{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        position: relative;
+        bottom: 150px;
+        padding: 0px 50px 0px 50px;
+    }
+    .product_img_group .img-s{
+        max-width: 80px;
+        width: 100%;
+    }
+    .product_img_group .img-s img{
+        width: 100%;
+        border: 1px solid #000;
+        border-radius: 10px;
+    }
+    .button {
+        max-width: 25px;
+        width: 100%;
+        border: 1px solid #000;
+        border-radius: 5px;
+    }
+    .product_img_group .button-left{
+        text-align: center;
+        background-color: #eee;
+    }
+    .product_img_group .button-right{
+        text-align: center;
+        background-color: #000;
+        color: #fff;
+    }
+
+/* header_right */
+    /* right-path */
+    .right-path{
+        display: flex;
+        justify-content:flex-start;
+        gap: 10px;
+        align-items: center;
+    }
+    .right-path .arrow{
+        width: 40px;
+        height: 20px;
+        background-color: #eee;
+    }
+    /* right-item-info */
+    .right-item-info{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .right-item-info-text h3{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    /* right-item-info-table */
+    .right-item-info table{
+        max-width: 400px;
+        border-collapse: collapse;
+        box-sizing: border-box;
+        font-size: 0.8rem;
+        text-align: start;
+        width: 100%;
+    }
+    .right-item-info table td{
+        border-bottom: 1px solid #9f9d9d;
+        padding: 10px 0px 5px 0px;
+    }
+
+    .right-item-info tr td{
+        color: #9f9d9d;
+        font-size: 16px;
+        font-family: "Noto Sans JP", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+    /* right-item-info-num */
+    .right-item-info .num{
+        display: flex;
+        justify-content:flex-start;
+        max-width: 400px;
+    }
+    .right-item-info input{
+        padding: 10px;
+        width: 100%;
+        border-radius: 10px 0px 0px 10px ;
+        text-align: center;
+    }
+    .right-item-info .buy-button{
+        padding: 10px;
+        width: 60px;
+        background-color: #000;
+        border-radius: 0px 10px 10px 0px ;
+        color: #fff;
+        text-align: center;
+    }
+/* minecontent */
+.maincontent{
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction:column ;
+    gap: 100px;
+    align-items: center;
+}
+.maincontent h3{
+    font-family: "Kaisei Tokumin", serif;
+    font-weight: 800;
+    font-size: 80px;
+    color: #fff;
+    -webkit-text-stroke: 2px #EE868E;
+}
+    /* notice */
+    .maincontent .notice{
+        max-width: 980px;
+        width: 100%;
+        padding: 0px 40px 0px 40px ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+    .maincontent .notice li{
+        list-style: inside;
+        font-size: 1rem;
+        font-family: "Noto Sans JP", sans-serif;
+    }    
+    .maincontent .notice-title{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        /* 底線 */
+        padding-bottom: 20px;
+        border-bottom: #000 1px solid;
+    }
+    .maincontent .notice-title h4{
+        font-family: "Kaisei Tokumin", serif;
+        font-weight: 600;
+        font-size: 24px;
+        color: #000;
+    }
+    .maincontent table{
+        border-collapse: collapse;
+        border: 1px solid #000;
+        box-sizing: border-box;
+        font-size: 1rem;
+        text-align: start;
+        width: 100%;
+    }
+    .maincontent table td {
+        border: 1px solid #9f9d9d;
+        padding: 10px;
+    }
+    .maincontent table td li {
+        padding: 0px;
+    }
+
+    .maincontent tr td{
+        color: #000;
+        font-size: 1rem;
+        font-family: "Noto Sans JP", sans-serif;
+    }
+
+    @media screen and (max-width: 980px) {  
+        .topheader{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .maincontent .notice{
+            max-width: 700px;
+            width: 100%;
+        }
+        }
+

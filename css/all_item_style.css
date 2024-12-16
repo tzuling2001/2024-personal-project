@@ -1,0 +1,115 @@
+/* all-page內 */
+
+/* topheader */
+    .topheader{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-event{
+        max-width: 600px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    .header-banner{
+        flex: 1;
+        min-width: 400px;
+        width: 100%;
+    }
+    /* header-banner */  
+    .header-banner img{
+        width: 100%;
+    }
+    /* header-event */
+    .event-news{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding: 20px 50px 20px 50px;
+    }
+    .event-title{
+        max-width: 500px;
+        width: 100%;
+    }
+    .event-title img{
+        width: 100%;
+    }
+    .even-table{
+        font-size: 18px;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-family: "Noto Sans JP", sans-serif;
+    }
+    .event-button{
+        color: #fff;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: 100px;
+        height: 30px;
+        background-color:  #2b2b2b;
+        border-radius: 50px;
+    }
+
+/* maincontent */
+.maincontent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+    /* content-select */
+    .content-select{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        max-width: 800px;
+        width: 100%;
+        padding: 80px;
+    }
+    .select-title{
+        width: 100px;
+        border-radius: 10px 0px 0px 10px;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+    }
+    .content-select select{
+        width: 100%;
+        padding: 10px;
+        border-radius: 0px 10px 10px 0px;
+        box-sizing: border-box;
+        border: #000 1px solid;
+        text-align: center;
+        font-family: "Noto Sans JP", sans-serif;
+        color: #000;
+    }
+    /* content-items --> title */
+    .content-title{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+/* 響應式 */
+
+@media screen and (max-width: 980px) {  
+    .topheader{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-event{
+        order: 2;
+    }
+    .header-banner{
+        order: 1;
+    }
+    
+    }

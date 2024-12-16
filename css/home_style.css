@@ -1,0 +1,201 @@
+/* homepage內 */
+
+/* banner */
+    .banner{
+        width: 100%;
+    }
+    .banner img{
+        width: 100%;
+    }
+
+/* maincontent */
+    .maincontent{
+        width: 100%;
+        padding-top: 100px;
+        display: flex;
+        flex-direction:column ;
+        gap: 100px;
+        align-items: center;
+    }
+    .content-items{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        padding: 0px 60px 0px 60px;
+    }
+    .content-title{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .content-title h3{
+        font-family: "Kaisei Tokumin", serif;
+        font-weight: 800;
+        font-style: normal;
+    }
+    .content-title p{
+        font-family: "Kaisei Tokumin", serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 24px;
+    }
+
+/* NEW & clander */
+    /* NEWS_event */
+    .news{
+        width: 100%;
+        display: flex;
+        /* flex-wrap: wrap; */
+        justify-content:flex-end;
+        margin-top: 80px;
+    }
+    @media screen and (max-width: 1300px) {
+        .news{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 80px;
+        }
+    }
+    .news-event{
+        max-width: 650px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .event-title{
+        border-top: #000 solid 1px;
+        border-bottom: #000 solid 1px;
+        box-sizing: border-box;
+        padding: 40px 0px 40px 0px ;
+    }
+    .event-items{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border-bottom: #000 solid 1px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .event-items .time{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 10px;
+    }
+    .event-items .label{
+        padding: 0px 10px 0px 10px;
+    }
+    .event-items .time .img{
+        background-color: #eee;
+        width: 19px;
+        height: 19px;
+    }
+    .event-view{
+        border-bottom: #000 1px solid;
+        display: flex;
+        justify-content: start;
+        gap: 22px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .event-view .viewicon{
+        width: 20px;
+        height: 23px;
+        background-color: #eee;
+    }
+    /* NEWS_clander */
+    .clander{
+        max-width: 650px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .clander .title {
+        border: #000 solid 1px;
+        padding: 40px 20px 40px 20px ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .clander ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .clander li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .clander .control{
+        width: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .clander .ctrlmonth{
+        width: 35px;
+        text-align: center;
+    }
+
+    .clander table{
+        border-collapse: collapse;
+        font-size: 0.8rem;
+        text-align: center;
+        width: 100%;
+        table-layout: fixed;
+    }
+    .clander td {
+        border: 1px solid #2b2b2b;
+        padding: 30px;
+    }
+/* iframe */
+    .video{
+        width: 100%;
+        height: 400px;
+        margin-top: 300px;
+        /* 樣式 */
+        background-color: #675D88;
+    }
+    .ytvideo{
+        width: calc(100% - 120px);
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: -200px;
+        padding: 0px 60px 0px 60px ;
+    }
+    iframe{
+        border-radius: 20px;
+    }
+
+/* 響應式 */
+@media screen and (max-width: 980px)  {
+/* maincontent */
+
+/* NEW & clander */
+    /* NEWS_event */
+    .news{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+/* iframe */
+    .ytvideo{
+        width: 100%;
+    }
+}
+
+
+
+
+
