@@ -8,6 +8,8 @@
      <link rel="stylesheet" href="./css/home_style.css">
      <link rel="stylesheet" href="./css/all-page.css">
      <link rel="stylesheet" href="./css/item_card.css">
+     <!-- slick css -->
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
      <!-- 文字 -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,9 +23,9 @@
     <div class="warrper">
 
         <nav class="nav_web">
-            <a class="logo" href="./home.html">
+            <a class="logo" href="./index.html">
                 <img src="./img/svg/logo.png">
-             </a>
+            </a>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -87,9 +89,23 @@
         </nav>
         <!--  -->
         <div class="homepage">
-            <div class="banner">
-                <img src="./img/banner/沈夏新品 (L.jpg" alt="banner">
+            <div class="slick-warrper">
+                <div class="banner">
+                    <img src="./img/banner/沈夏新品 (L.jpg" alt="banner">
+                </div>
+                <div class="banner">
+                    <img src="./img/banner/夏日飽party (L.jpg" alt="">
+                </div>
+                <div class="banner">
+                    <img src="./img/banner/沈夏新品 (L.jpg" alt="banner">
+                </div>
+                <div class="banner">
+                    <img src="./img/banner/夏日飽party (L.jpg" alt="">
+                </div>
             </div>
+            <!-- <div class="banner">
+                <img src="./img/banner/沈夏新品 (L.jpg" alt="banner">
+            </div> -->
             <!--  -->
             <div class="maincontent">
                 <div class="content-items">
@@ -425,7 +441,20 @@
             </div>
         </div>
     </div>
+    <!-- banner js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script>
+        $('.slick-warrper').slick({
+            autoplay: true,
+            autoplaySpeed: 2000,
+            dots:true,
+            speet: 800,
+            arrows:false,
+        });
+    </script>    
     <!-- js -->
     <script src="./js/new.js"></script>
+    
 </body>
 </html>
