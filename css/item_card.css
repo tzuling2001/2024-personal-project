@@ -19,9 +19,9 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
 }
 .content-box .item{
     max-width: 260px;
@@ -33,15 +33,16 @@
     border-bottom: #2b2b2b solid 1px;
 }
 .content-box img{
-    width: 100%;
-    height: auto;
+    object-fit: cover;
+    width: 260px;
+    height: 260px;
 }
 .content-box .item-name{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.label{
+.item-name .label{
     font-size: 14px;
     border: #2b2b2b solid 1px;
     padding: 3px 10px 3px 10px;
