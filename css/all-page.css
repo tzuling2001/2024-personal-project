@@ -38,6 +38,8 @@
         font-optical-sizing: auto;
         font-weight: 400;
         font-style: normal;
+        text-decoration: none; /* 去除默认的下划线 */
+        color: #000;    /* 去除默认的颜色和点击后变化的颜色 */
     }
 
 /* 結構 */
